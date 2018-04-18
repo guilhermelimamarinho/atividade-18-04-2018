@@ -1,3 +1,5 @@
+package guilherme;
+
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -7,6 +9,9 @@ import java.util.Scanner;
  */
 
 public class ManipulaVetores {
+	private Scanner leitor;
+
+
 	public int[] inicializarVetor(){
 		System.out.println("Incializarndo vetor");
 		int valor = obterValor();
@@ -29,6 +34,7 @@ public class ManipulaVetores {
 		*/
 		
 	public void imprimirVetor(int[] vetor, int tipo){
+		int i;
 		if (tipo == 1) {
 		
 			for( i = 0; i < vetor.length; i++){
@@ -50,7 +56,7 @@ public class ManipulaVetores {
 		}
 		
 	public int consultarElemento(int[] vetor, int elementoBusca){
-		for (int i =0; i <vetor.length; i++){
+		for (int i =0; i <vetor.length;){
 		
 			if(vetor[i]== elementoBusca);
 		return i;
@@ -63,7 +69,7 @@ public class ManipulaVetores {
 		
 			int valor = -1;
 		
-			Scanner leitor = new Scanner(System.in);
+			leitor = new Scanner(System.in);
 		
 			System.out.println("Informe um numero");
 		

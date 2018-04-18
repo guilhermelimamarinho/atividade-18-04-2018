@@ -1,3 +1,5 @@
+package guilherme;
+
 import java.util.Scanner;
 
 /**
